@@ -21,7 +21,7 @@ def testList():
 
 def isUnique(case):
     """Super fast"""
-    return len(case) == len(''.join(set(case)))
+    return len(case) == len(''.join(set(case))) #Set removes any duplicate elements, join converts to one string
 
 
 def withoutExtraStructures(case):
