@@ -11,10 +11,10 @@ def testList():
     for x in range(50):
         newString = ""
         for y in range(random.randint(0,50)):
-            if(random.randint(0,1) == 1):
-                newString += chr(random.randint(97, 122))
-            else:
-                newString += chr(random.randint(65, 90))
+            # if(random.randint(0,1) == 1):
+            newString += chr(random.randint(97, 122))
+            # else:
+            #     newString += chr(random.randint(65, 90))
         testList.append(newString)
     return testList
 
