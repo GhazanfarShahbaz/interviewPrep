@@ -1,11 +1,22 @@
 class Node:
-    def __init__(self, val, next=None):
+    def __init__(self, val=None, next=None):
         self.val = val
         self.next = next
         # Obvi this is just for my own use, size is very inefficient because it will only give you correct size for the head every other value will simply signify how many elements are left
         self.size = 1
         if self.next:
             self.size = self.next.size + 1
+    
+    def print(self):
+        test= 0
+        string = f"{self.val} "
+        n = self.next
+        while(n):
+            string += f"{n.val} "
+            n = n.next
+            test += 1
+        print(string)
+        
 
 
 class LinkedList:
