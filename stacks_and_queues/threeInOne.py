@@ -1,6 +1,8 @@
 """3.1: Three in One
 Describe how you would ise a single array to implement three stacks"""
 
+# Note just use insert function next time :(
+
 
 class threeInOne:
     def __init__(self):
@@ -17,7 +19,7 @@ class threeInOne:
             elif action == "peek":
                 return self.arr[self.first - 1]
             elif action == "push":
-                self = self[:first] + [val] + self[first:]
+                self.arr[:] = self[:first] + [val] + self[first:]
                 self.first += 1
             elif action == "size":
                 return self.first

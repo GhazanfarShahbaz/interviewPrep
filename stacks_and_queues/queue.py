@@ -1,6 +1,6 @@
 class queue:
     def __init__(self):
-        values = []
+        self.values = []
 
     def isEmpty(self):
         return self.values.length == 0
